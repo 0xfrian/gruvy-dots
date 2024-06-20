@@ -1,0 +1,58 @@
+[global]
+
+# ===== Colors =======================================================
+foreground = "#EBDBB2"
+background = "#28282899"
+
+# ===== Geometry =====================================================
+width = 400
+height = 300
+origin = bottom-right
+offset = 20x20
+padding = 10
+alignment = left
+vertical_alignment = top
+
+# ===== Gap + Separator ==============================================
+frame_width = 0
+frame_color = "transparent"
+separator_height = 0
+gap_size = 0
+
+# ===== Text =========================================================
+format = "<b>%a</b> \n %s \n %p"
+font = JetBrains Mono 14
+markup = full
+
+# ===== Icons ========================================================
+icon_position = left
+icon_corner_radius = 10
+max_icon_size = 48
+icon_theme = Gruvbox-Plus-Dark
+icon_path = /usr/share/icons/Gruvbox-Plus-Dark/actions/
+
+# ===== Progress Bar =================================================
+progress_bar = true
+progress_bar_height = 10
+progress_bar_frame_width = 1
+progress_bar_min_width = 150
+progress_bar_max_width = 300
+progress_bar_corner_radius = 10
+
+# ===== History ======================================================
+mouse_left_click = close_current
+timeout = 10
+sticky_history = yes
+history_length = 20
+
+# ===== Misc =========================================================
+sort = yes
+ellipsize = end
+ignore_newline = no
+idle_threshold = 120
+indicate_hidden = yes
+show_indicators = yes
+notification_limit = 0
+show_age_threshold = 60
+stack_duplicates = false
+hide_duplicate_count = false
