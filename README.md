@@ -1,6 +1,22 @@
 # gruvy dots
 ***dot-files with a [gruvbox](https://github.com/morhetz/gruvbox) theme***
 
+### Images
+
+<picture>
+    <img
+        alt="Screencapture of Gruvbox theme"
+        src="/images/neofetch-neovim.png"
+    >
+</picture>
+
+<picture>
+    <img
+        alt="Screencapture of Gruvbox theme"
+        src="/images/dunst-rofi.png"
+    >
+</picture>
+
 ### References
 🏗️ System
 - OS: [Arch Linux](https://archlinux.org/)
