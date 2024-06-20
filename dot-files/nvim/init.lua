@@ -26,6 +26,7 @@ require('lazy').setup({
   require 'plugins.conform',
   require 'plugins.gitsigns',
   require 'plugins.gruvbox',
+  require 'plugins.icon-picker',
   require 'plugins.indent_line',
   require 'plugins.lsp',
   require 'plugins.lualine',
