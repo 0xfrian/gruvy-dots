@@ -13,7 +13,7 @@
 <picture>
     <img
         alt="Screencapture of Gruvbox theme"
-        src="/images/dunst-rofi.png"
+        src="/images/rofi-dunst.png"
     >
 </picture>
 
