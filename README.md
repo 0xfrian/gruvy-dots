@@ -1,4 +1,4 @@
-# gruvy dots
+# 🕺 gruvy dots 🎨
 ***dot-files with a [gruvbox](https://github.com/morhetz/gruvbox) theme***
 
 ### Images
