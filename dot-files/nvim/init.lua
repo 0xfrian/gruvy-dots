@@ -20,6 +20,7 @@ require 'options'
 require('lazy').setup({
   require 'plugins.alpha',
   require 'plugins.autopairs',
+  require 'plugins.autotag',
   require 'plugins.cokeline',
   require 'plugins.colorizer',
   require 'plugins.comment',

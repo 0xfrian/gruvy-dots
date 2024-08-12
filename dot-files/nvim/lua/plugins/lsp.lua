@@ -93,7 +93,15 @@ return {
           },
         },
       },
-      tsserver = {},
+      tsserver = {
+        initializationOptions = {
+          preferences = {
+            importModuleSpecifierPreference = 'non-relative',
+          },
+        },
+      },
+      prismals = {},
+      rust_analyzer = {}
     }
 
     require('mason').setup()

@@ -34,6 +34,10 @@ keymap('n', '<Leader>l', '<C-w><C-l>', opts)
 keymap('n', '<Leader>j', '<C-w><C-j>', opts)
 keymap('n', '<Leader>k', '<C-w><C-k>', opts)
 keymap('n', '<Leader>w', ':<C-w>q<CR>', opts)
+keymap('n', '<C-Up>', ':resize +2<CR>', opts)
+keymap('n', '<C-Down>', ':resize -2<CR>', opts)
+keymap('n', '<C-Left>', ':vertical resize -2<CR>', opts)
+keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- Buffer navigation/management
 keymap('n', '<C-Tab>', '<Plug>(cokeline-focus-next)', opts)
@@ -61,8 +65,14 @@ keymap('v', '>', '>gv', opts)
 keymap('x', '<', '<gv', opts)
 keymap('x', '>', '>gv', opts)
 
+-- Toggle word wrap
+keymap('n', '<Leader>W', ":set wrap!<CR>", { desc = 'Toggle word wrap' })
+
 -- Toggle color column
-keymap('n', '<Leader>C', ":execute 'set colorcolumn=' . (&colorcolumn == '' ? '70' : '')<CR>", opts)
+keymap('n', '<Leader>cc', ":execute 'set colorcolumn=' . (&colorcolumn == '' ? '70' : '')<CR>", { desc = 'Toggle column' })
+
+-- Toggle colorizer
+keymap('n', '<Leader>C', ':ColorizerToggle<CR>', { desc = 'Toggle Colorizer' })
 
 -- File Explorer (Nvim-Tree)
 keymap('n', '\\', ':NvimTreeToggle<CR>', { desc = 'Open file explorer' })
@@ -70,14 +80,18 @@ keymap('n', '\\', ':NvimTreeToggle<CR>', { desc = 'Open file explorer' })
 -- Outline (Lspsaga)
 keymap('n', '|', ':Lspsaga outline<CR>', { desc = 'Open outline' })
 
+-- LSP
+keymap('n', '<Leader>Lm', ':Mason<CR>', { desc = 'Open Mason' })
+keymap('n', '<Leader>Li', ':LspInfo<CR>', { desc = 'View LSP Info' })
+keymap('n', '<Leader>Lr', ':LspRestart<CR>', { desc = 'Restart LSP' })
+
 -- Icon Picker
-vim.keymap.set('n', '<Leader>e', ':IconPickerNormal<CR>', { desc = 'Open Icon-Picker' })
+vim.keymap.set('n', '<Leader>e', ':IconPickerNormal emoji<CR>', { desc = 'Open Icon-Picker' })
 
 -- Diagnostics
 keymap('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
 keymap('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagnostic message' })
--- keymap('n', '<Leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
--- keymap('n', '<Leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+keymap('n', 'ge', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 
 -- Unmap keys
 keymap('', 'q', '')

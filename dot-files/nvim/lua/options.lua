@@ -5,6 +5,7 @@
 -- ===== Line numbers and wrapping ===================================
 vim.opt.number = true -- Enable line numbers
 vim.opt.numberwidth = 1 -- Set width of line number column
+vim.opt.textwidth = 70 -- Set # of characters in a line
 vim.opt.wrap = false -- Disable line wrapping
 vim.opt.wrapmargin = 0 -- Remove wrap margin
 vim.opt.linebreak = true -- Break line at nearest word instead of char
